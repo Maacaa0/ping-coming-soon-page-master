@@ -63,7 +63,7 @@ input {
 }
 input::placeholder {
     font-size: 1rem;
-    color: #d3d3d37d;
+    color: #d3d3d335;
     letter-spacing: .2px;
 }
 
@@ -116,6 +116,7 @@ button:active {
 
 footer {
     margin-top: 4.3rem;
+    margin-bottom:4rem;
 }
 
 .social {
