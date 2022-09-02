@@ -1,0 +1,188 @@
+:root {
+    --Blue: #4f7df3;
+    --PaleBlue: hsl(223, 100%, 88%);
+    --LightRed: hsl(354, 100%, 66%);
+
+    --Gray: hsl(0, 0%, 59%);
+    --VeryDarkBlue: hsl(209, 33%, 12%);
+
+    --fw300: 300;
+    --fw600: 600;
+    --fw700: 700;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+.upper-section {
+    margin-bottom: 5.3rem;
+}
+
+h1 {
+    font-weight: var(--fw300);
+    font-size: 3.01rem;
+    color: var(--Gray);
+    margin-top: 2.7rem
+}
+
+span {
+    font-weight: var(--fw700);
+    color: black;
+}
+
+.sub-heading {
+    font-size: 1.25rem;
+    margin-top: -1.4rem;
+}
+
+form {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2.6rem;
+}
+
+input {
+    padding: 1rem 14rem 1rem 2rem;
+    border-radius: 4rem;
+    border: 2px solid #d3d3d37d;
+}
+input::placeholder {
+    font-size: 1rem;
+    color: #d3d3d37d;
+    letter-spacing: .2px;
+}
+
+.email-validation {
+    display: none;
+    position: absolute;
+    left: 2rem;
+    top: 3.1rem;
+    font-size: .7rem;
+    letter-spacing: 1px;
+    font-style: italic;
+    color: var(--LightRed);
+}
+
+.toggle-error {
+    display: block;
+}
+input:focus {
+    border: var(--LightRed);
+}
+
+.toggle-border {
+    border: 2px solid var(--LightRed)
+}
+
+button {
+    padding: 1.1rem 4rem 1.3rem 4rem;
+    border-radius: 4em;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    font-weight: var(--fw600);
+    background-color: var(--Blue);
+    box-shadow: var(--Blue) 0px 5px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px lightblue;
+    transition: 100ms ease-in-out;
+}
+
+.main-image {
+    max-width: 40rem;
+}
+
+footer {
+    margin-top: 4.3rem;
+}
+
+.social {
+    margin-right: .5rem;
+    border: #d3d3d37d 1px solid;
+    border-radius: 50%;
+    padding: .9rem;
+}
+
+.fb {
+    background: url(images/facebook-svgrepo-com.svg) center center no-repeat;
+}
+.fb:hover {
+    background-image: url(images/facebook-svgrepo-com-white.svg);
+}
+
+.tw {
+    background: url(images/twitter-svgrepo-com.svg) center center no-repeat;
+}
+.tw:hover {
+    background-image: url(images/twitter-svgrepo-com-white.svg);
+}
+
+.ig {
+    background: url(images/instagram-logo-bold-svgrepo-com.svg) center center no-repeat;
+}
+.ig:hover {
+    background-image: url(images/instagram-logo-bold-svgrepo-com-white.svg);
+}
+
+.social:hover {
+    background-color: var(--Blue);
+    transition: .2s ease-in;
+}
+
+
+small {
+    display: block;
+    color: var(--Gray);
+    margin-top: 1.2rem;
+    font-size: 0.76rem;
+}
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        padding-right: 9rem;
+    }
+
+    button {
+        padding-left: 8.5rem;
+        padding-right: 8.5rem;
+    }
+
+    .main-image {
+        max-width: 100%;
+    }
+
+    .email-validation {
+        position: static;
+        margin: 0;
+    }
+}
