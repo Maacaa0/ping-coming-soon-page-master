@@ -81,7 +81,7 @@ input::placeholder {
     display: block;
 }
 input:focus {
-    border: var(--LightRed);
+    border: 2px solid var(--LightRed);
 }
 
 .toggle-border {
